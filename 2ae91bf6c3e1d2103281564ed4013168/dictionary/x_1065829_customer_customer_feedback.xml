@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="834b57f6c3a956103281564ed40131ad" label="Customer Feedback" max_length="40" name="x_1065829_customer_customer_feedback" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Sentiment Result" max_length="40" name="sentiment_result" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Customer Name" max_length="40" name="customer_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Feedback Text" max_length="4000" name="feedback_text" type="journal"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Sentiment Score" max_length="15" name="sentiment_score" type="decimal"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

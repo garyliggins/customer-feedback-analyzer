@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1065829_customer.CustomerFeedbackSentiment</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>CustomerFeedbackSentiment</name>
+        <script><![CDATA[var CustomerFeedbackSentiment = Class.create();
+CustomerFeedbackSentiment.prototype = {
+    initialize: function() {},
+    
+    analyzeSentiment: function(feedbackText) {
+        var requestBody = JSON.stringify({
+            document: {
+                type: "PLAIN_TEXT",
+                content: feedbackText
+            }
+        });
+
+        var restMessage = new sn_ws.RESTMessageV2('Google Sentiment Analysis', 'POST');
+        restMessage.setRequestBody(requestBody);
+
+        var response;
+        try {
+            response = restMessage.execute();
+            var responseBody = response.getBody();
+            var parsedResponse = JSON.parse(responseBody);
+
+            var sentiment = {
+                score: parsedResponse.documentSentiment.score,
+                magnitude: parsedResponse.documentSentiment.magnitude
+            };
+            
+            return sentiment;
+
+        } catch (error) {
+            gs.error("Error in CustomerFeedbackSentiment: " + error.message);
+            return null;
+        }
+    },
+
+    type: 'CustomerFeedbackSentiment'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-02 20:28:07</sys_created_on>
+        <sys_id>35cbabf2c3ed56103281564ed4013170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CustomerFeedbackSentiment</sys_name>
+        <sys_package display_value="Customer Feedback Analyzer" source="x_1065829_customer">2ae91bf6c3e1d2103281564ed4013168</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Customer Feedback Analyzer">2ae91bf6c3e1d2103281564ed4013168</sys_scope>
+        <sys_update_name>sys_script_include_35cbabf2c3ed56103281564ed4013170</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 20:28:07</sys_updated_on>
+    </sys_script_include>
+</record_update>

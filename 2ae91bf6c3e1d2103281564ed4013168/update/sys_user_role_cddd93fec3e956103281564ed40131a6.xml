@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>For users who can view, create, and update feedback, and take actions on flagged feedback.</description>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1065829_customer.feedback_manager</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>feedback_manager</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-02 19:25:54</sys_created_on>
+        <sys_id>cddd93fec3e956103281564ed40131a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1065829_customer.feedback_manager</sys_name>
+        <sys_package display_value="Customer Feedback Analyzer" source="x_1065829_customer">2ae91bf6c3e1d2103281564ed4013168</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Feedback Analyzer">2ae91bf6c3e1d2103281564ed4013168</sys_scope>
+        <sys_update_name>sys_user_role_cddd93fec3e956103281564ed40131a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 19:25:54</sys_updated_on>
+    </sys_user_role>
+</record_update>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+  "document": {&#13;
+    "type": "PLAIN_TEXT",&#13;
+    "content": "${feedback_text}"&#13;
+  }&#13;
+}&#13;
+</content>
+        <function_name>POST</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Google Sentiment Analysis [ POST ]</qualified_name>
+        <rest_endpoint>https://language.googleapis.com/v1/documents:analyzeSentiment?key=AIzaSyCothmHbeYWsrVnqgWqugEIsseqE_69dcs</rest_endpoint>
+        <rest_message display_value="Google Sentiment Analysis">a4f4ebfec32d56103281564ed40131d2</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-02 20:10:09</sys_created_on>
+        <sys_id>8e976f3ac32d56103281564ed401315f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>POST</sys_name>
+        <sys_package display_value="Customer Feedback Analyzer" source="x_1065829_customer">2ae91bf6c3e1d2103281564ed4013168</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Feedback Analyzer">2ae91bf6c3e1d2103281564ed4013168</sys_scope>
+        <sys_update_name>sys_rest_message_fn_8e976f3ac32d56103281564ed401315f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 20:42:30</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

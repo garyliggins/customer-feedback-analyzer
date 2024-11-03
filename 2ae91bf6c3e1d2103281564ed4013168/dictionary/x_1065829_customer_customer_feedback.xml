@@ -5,6 +5,7 @@
         <element attributes="edge_encryption_enabled=true" label="Customer Name" max_length="40" name="customer_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Feedback Text" max_length="4000" name="feedback_text" type="journal"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Sentiment Magnitude" max_length="20" name="sentiment_magnitude" type="decimal"/>
         <element label="Sentiment Score" max_length="15" name="sentiment_score" type="decimal"/>
         <index name="index">
             <element name="sys_class_name"/>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+  "document": {&#13;
+    "type": "PLAIN_TEXT",&#13;
+    "content": "${feedbackText}"&#13;
+  }&#13;
+}&#13;
+</content>
+        <function_name>POST</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Google Sentiment Analysis [ POST ]</qualified_name>
+        <rest_endpoint>https://language.googleapis.com/v1/documents:analyzeSentiment?key=AIzaSyAzCUMAzOCujOd69rbg4lUKHFCn7lc-lNk</rest_endpoint>
+        <rest_message display_value="Google Sentiment Analysis">a4f4ebfec32d56103281564ed40131d2</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-02 20:10:09</sys_created_on>
+        <sys_id>8e976f3ac32d56103281564ed401315f</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>POST</sys_name>
+        <sys_package display_value="Customer Feedback Analyzer" source="x_1065829_customer">2ae91bf6c3e1d2103281564ed4013168</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Feedback Analyzer">2ae91bf6c3e1d2103281564ed4013168</sys_scope>
+        <sys_update_name>sys_rest_message_fn_8e976f3ac32d56103281564ed401315f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 23:20:28</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Customer Feedback Analyzer">2ae91bf6c3e1d2103281564ed4013168</application>
+        <file_path/>
+        <instance_id>62d15950db06f554caf99027c59619a9</instance_id>
+        <instance_name>dev189676</instance_name>
+        <name>sys_rest_message_fn_8e976f3ac32d56103281564ed401315f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content>{&#13;
+  "document": {&#13;
+    "type": "PLAIN_TEXT",&#13;
+    "content": "${feedbackText}"&#13;
+  }&#13;
+}&#13;
+</content><function_name>POST</function_name><http_method>post</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Google Sentiment Analysis [ POST ]</qualified_name><rest_endpoint>https://language.googleapis.com/v1/documents:analyzeSentiment?key=AIzaSyAzCUMAzOCujOd69rbg4lUKHFCn7lc-lNk</rest_endpoint><rest_message display_value="Google Sentiment Analysis">a4f4ebfec32d56103281564ed40131d2</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-02 20:10:09</sys_created_on><sys_id>8e976f3ac32d56103281564ed401315f</sys_id><sys_mod_count>20</sys_mod_count><sys_name>POST</sys_name><sys_package display_value="Customer Feedback Analyzer" source="x_1065829_customer">2ae91bf6c3e1d2103281564ed4013168</sys_package><sys_policy/><sys_scope display_value="Customer Feedback Analyzer">2ae91bf6c3e1d2103281564ed4013168</sys_scope><sys_update_name>sys_rest_message_fn_8e976f3ac32d56103281564ed401315f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-02 23:20:28</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>1359737959</payload_hash>
+        <record_name>POST</record_name>
+        <reverted_from/>
+        <source>a15c977ac3a956103281564ed40131b5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-02 23:20:28</sys_created_on>
+        <sys_id>d393580bc32112103281564ed401316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192ef2e19370000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 23:20:28</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>5b93580ba52112101de498bba89a676a</update_guid>
+        <update_guid_history>5b93580ba52112101de498bba89a676a:1359737959,81539c87ce21121085376c894e5241dd:1694130277,01425c87542112107256b7e2f5b2e1c9:1201772896,8b221c47fd2112105ed40aababe7c700:163765436,a131d4c3702112108adbdedbccd0ef92:2082392361,a7f0d0470221121067ca116e2553de86:582005557,6deb373a8425961091cbbb64637f6eb0:596784248,563bb77abd2596109965455af75bcf55:582005557,4d7a7bb246259610635fa3afc788f3e8:504679145,f659b332962596105a408de2b11247d6:553723125,6418f7be72e1961082064890369fb6e2:1962454125,bdd673fa2de19610f29cb021f0eecac4:553723125,057fa3fe9121961036aac0fa6eadec3c:1821015084,324f277a0a219610bb9c13ffebf797a8:1822212190,091f6b3afa219610965845c389a8e6ad:1332815232,de9b23f281ed5610a022ecfc7cf0edef:2145851894,e28aa7f2d7ed56106ecefe7b9e58ecc3:18135147,884aebb272ed561039a751f49f60e1a4:-441623420,f7f9ebb265ed5610637af42028a56784:-218893568,5f09e3ba76ad5610667a5fe4e976374f:-441623420,57086f72a1ad56102f3dad7c2a1f4753:-654795826</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-02 23:20:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>84e4101a7fb5450b9482fd2df38d7f01</sys_id>
+        <sys_metadata>8e976f3ac32d56103281564ed401315f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>POST</sys_name>
+        <sys_package display_value="Customer Feedback Analyzer" source="x_1065829_customer">2ae91bf6c3e1d2103281564ed4013168</sys_package>
+        <sys_parent display_value="Google Sentiment Analysis">a4f4ebfec32d56103281564ed40131d2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Customer Feedback Analyzer">2ae91bf6c3e1d2103281564ed4013168</sys_scope>
+        <sys_scope_delete display_value="">b722d6e00e454488ab6c4f1dbd21f640</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_8e976f3ac32d56103281564ed401315f</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_8e976f3ac32d56103281564ed401315f">d393580bc32112103281564ed401316b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 23:20:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
